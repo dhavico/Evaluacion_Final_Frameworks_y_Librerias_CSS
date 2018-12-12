@@ -1,0 +1,81 @@
+@font-face{
+    font-family: 'Escolar';
+    src: url(../font/Escolar_G.TTF);
+}
+body{
+    background: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 130px;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+.cabecera{
+    padding: 10px !important;
+    height: 130px;
+}
+.logo {
+    height: 110px;
+    margin-left: 20px;
+}
+.slogan{
+    font-family: 'Escolar';
+    margin-top: 30px;
+    font-size: 30px;
+}
+.seccion-central{
+    background-color: rgba(21, 22, 32, 0.582);
+    padding-top: 40px !important;
+}
+.seccion-imagenes{
+    border-left: 1px dashed white;
+}
+.seccion-blog{
+    background-color:  rgba(255, 255, 255, 0.8);
+    padding-top: 20px !important;
+}
+.seccion-blog .publicaciones{
+    border-right: 1px dashed black;
+}
+.seccion-blog .publicaciones p{
+    text-align: justify;
+}
+.comentarios img{
+    background-color: beige;
+    padding-top: 10px;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    vertical-align: top;
+    display: inline-block;
+    max-height: 100px;
+    max-width: 100px;
+  }
+  .comentarios textarea{
+    height: 90px;
+    width: calc((100%) - 95px);
+    border-radius: 10px;
+    color: #000000;
+    background-color: white;
+    padding: 5px;
+  }
+  .autor img{
+      max-width: 200px;
+      background-color: beige;
+      border: 1px solid black;
+  }
+@media(max-width:601px){
+    .cabecera{
+        height: auto;
+    }
+    .seccion-imagenes{
+        border-left: none;
+    }
+    
+}
+@media(max-width: 992px){
+    .seccion-blog .publicaciones{
+        border-right:none;
+    }
+}
